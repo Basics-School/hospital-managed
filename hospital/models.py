@@ -4,11 +4,15 @@ from django.contrib.auth.models import User
 
 
 departments=[('Cardiologist','Cardiologist'),
-('Dermatologists','Dermatologists'),
-('Emergency Medicine Specialists','Emergency Medicine Specialists'),
-('Allergists/Immunologists','Allergists/Immunologists'),
-('Anesthesiologists','Anesthesiologists'),
-('Colon and Rectal Surgeons','Colon and Rectal Surgeons')
+('Dermatologist','Dermatologist'),
+('Emergency Medicine Specialist','Emergency Medicine Specialist'),
+('Gastroenterologist','Gastroenterologist'),
+('Pediatrician', 'Pediatrician'),
+('Plastic Surgeon', 'Plastic Surgeon'),
+('Allergists/Immunologist','Allergists/Immunologist'),
+('Anesthesiologist','Anesthesiologist'),
+('Physiatrist', 'Physiatrist'),
+('Colon and Rectal Surgeon','Colon and Rectal Surgeon')
 ]
 class Doctor(models.Model):
     user=models.OneToOneField(User,on_delete=models.CASCADE)

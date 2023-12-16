@@ -43,7 +43,7 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('address', models.CharField(max_length=40)),
                 ('mobile', models.CharField(max_length=40, null=True)),
-                ('department', models.CharField(choices=[('Cardiologist', 'Cardiologist'), ('Dermatologists', 'Dermatologists'), ('Emergency Medicine Specialists', 'Emergency Medicine Specialists'), ('Allergists/Immunologists', 'Allergists/Immunologists'), ('Anesthesiologists', 'Anesthesiologists'), ('Colon and Rectal Surgeons', 'Colon and Rectal Surgeons')], default='Cardiologist', max_length=50)),
+                ('department', models.CharField(choices=[('Cardiologist', 'Cardiologist'), ('Physiatrist', 'Physiatrist'), ('Plastic Surgeon', 'Plastic Surgeon'), ('Pediatrician', 'Pediatrician'), ('Dermatologist', 'Dermatologist'), ('Emergency Medicine Specialist', 'Emergency Medicine Specialist'), ('Allergists/Immunologist', 'Allergists/Immunologist'), ('Anesthesiologist', 'Anesthesiologist'), ('Gastroenterologist', 'Gastroenterologist'), ('Colon and Rectal Surgeon', 'Colon and Rectal Surgeon')], default='Cardiologist', max_length=50)),
                 ('status', models.BooleanField(default=False)),
                 ('user', models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
             ],
